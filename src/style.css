@@ -1,0 +1,35 @@
+.menu1 ul{
+   list-style:none;
+   padding: 0%;
+   display: flex;
+}
+.menu1 ul li {
+    margin-right: 100px;
+}
+h2{
+    color:aqua; 
+ }
+ p{
+     color:#FA287F;
+ }
+ li{
+     color:rgb(59,9,30);
+ }
+ ul{
+     color:rgba(224, 36, 114, 1);
+ }
+ .color-negro{
+     color:burlywood;
+ }
+ #subtitulo{
+     color:darkblue;
+ }
+ .piepag ul{
+    list-style:none;
+    padding: 0%;
+    display: flex;
+ }
+.piepag ul li{
+    margin-right: 100px
+    }
+

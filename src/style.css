@@ -1,10 +1,13 @@
-.menu1 ul{
+.menu1 ul {
+    
    list-style:none;
    padding: 0%;
    display: flex;
+
+  
 }
 .menu1 ul li {
-    margin-right: 100px;
+    margin-right: 200px; 
 }
 h2{
     color:aqua; 
@@ -32,4 +35,31 @@ h2{
 .piepag ul li{
     margin-right: 100px
     }
+.contenidop  {
+
+    color:burlywood;
+
+
+}
+.fondo {
+    background-color: aliceblue; 
+    background-image: url("https://e7.pngegg.com/pngimages/137/524/png-clipart-athlete-sports-football-player-graphy-pgn-kicking-soccer-ball-sports-equipment-shoe-thumbnail.png");
+}
+#header{
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-banner-onda-azul-que-fluye-moderno_1035-19862.jpg?w=2000");
+    background-repeat: no-repeat;
+    background:linear-gradient(90deg,skyblue,white);
+    background-size: 90%;
+    background-clip:border-box;
+}
+.piepag2 ul{
+    list-style:none;
+    padding: 0%;
+    display: flex;
+ }
+.piepag2 ul p{
+    margin-right: 100px
+    }
+
+
 

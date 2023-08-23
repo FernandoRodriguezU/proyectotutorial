@@ -1,7 +1,24 @@
+@keyframes movimientodeparrafo {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+margin-left: 0%;
+width: 100%;
+    }
+}
+
 *{
 margin : 0;
 padding: 0;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body {
+    background-image: url(https://images7.alphacoders.com/782/782659.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 :root{
     --main-color:aqua;
@@ -10,25 +27,48 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
     --text-color-parrafo:grey;
     --text-color-parrafo-titulo:red;
 }
+#main__menu{
+    background:linear-gradient(90deg,rgb(236, 72, 72),rgb(14, 14, 14));
+    color: rgb(244, 238, 238);
+    top: 0%;
+    left: 0%;
 
+
+}
+.main__menu {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-self: center;
+align-items: flex-start;
+
+
+}
+.menu ul a::before {
+    content: "♥";
+  }
 
 .menu1 ul {
-    
+  
     list-style:none;
-    padding: 0%;
+    padding: 20px 10px;
     display: flex;
     font-size: larger;  
- 
-   
  }
  .menu1 ul li {
-     margin-right: 200px; 
+     margin-right: 150px;   
  }
+ .menu1__txt  a::before {
+    content: "♥";
+  }
  h2{
      color:rgb(17, 18, 18); 
   }
   p{
       color:var(--text-color-parrafo);
+    animation-name: movimientodeparrafo;
+    animation-duration: 3s;
   }
   li{
       color:rgb(78, 12, 39);
@@ -48,7 +88,8 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
      display: flex;
   }
  .piepag ul li{
-     margin-right: 100px
+     margin-right: 150px;
+    display: inline-block;
      }
  .contenidop  {
  
@@ -62,22 +103,18 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
  }
  .fondo {
      background-color: rgb(17, 17, 17); 
-     background-image: url("https://e7.pngegg.com/pngimages/137/524/png-clipart-athlete-sports-football-player-graphy-pgn-kicking-soccer-ball-sports-equipment-shoe-thumbnail.png");
+     background-image: url(https://images7.alphacoders.com/782/782659.jpg);
  }
- #header{
-     background-image: url("https://img.freepik.com/vector-gratis/fondo-banner-onda-azul-que-fluye-moderno_1035-19862.jpg?w=2000");
-     background-repeat: no-repeat;
-     background:linear-gradient(90deg,skyblue,rgb(14, 14, 14));
-     background-size: 90%;
-     background-clip:border-box;
- }
+
  .piepag2 ul{
      list-style:none;
      padding: 0%;
      display: flex;
   }
  .piepag2 ul p{
-     margin-right: 100px
+     display: inline-block;
+     margin-right: 150px
+     
      }
 .icono__2 {
 width: 20%;
@@ -96,13 +133,11 @@ border: 10px;
     background-color: azure;
     color:rgba(224, 36, 114, 1)
 }
-.pie__txt a {
-    display: block;
-text-decoration: none;
-color :aqua;
-padding: 10px 20px;
-border: 10px;
+.pie__txt{
+  
+    margin-right: 500px;
 }
+
 .pie__txt a:hover{
     background-color: azure;
     color:rgba(224, 36, 114, 1)
@@ -112,14 +147,25 @@ border: 10px;
 }
 .pie__txt a:active{
     background-color: rgb(9, 133, 133);
-    color:rgb(15, 8, 11)
+    color:rgb(239, 237, 238)
 }
 .pie__txt a:first-child{
     color:red;
+     display: inline-block;
 }
 .pie__txt a :focus{
     background-color: rgb(163, 184, 156);
     color:rgb(175, 86, 125)
+}
+.pie {
+  
+    list-style: none;
+    flex-direction: row;
+ display: flex;
+text-decoration: none;
+color :aqua;
+padding: 10px 20px;
+border: 10px;
 }
 
 
@@ -130,4 +176,34 @@ p::first-line{
 color:var(--text-color-parrafo-titulo);
 
 
+}
+.card{
+    width: 400px;
+    height: 400px;
+    margin:10px;
+    color:var(--text-color);
+    list-style: none;
+
+
+
+}
+.card__image{
+background-image: url();
+
+}
+.card__texto{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: none;
+    text-align: justify;
+    
+}
+.card__image2{
+
+    float:right;
+}
+h4{
+    color: aliceblue;
 }
